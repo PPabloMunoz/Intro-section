@@ -11965,3 +11965,8 @@ textarea.form-control-lg {
 .attribution a {
   color: #3e52a3;
 }
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: #fafafa;
+}

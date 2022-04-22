@@ -14,17 +14,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo" class="navbar-logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-light bg-light p-4">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand me-5 p-0" href="#"><img src="images/logo.svg" alt="Logo" class="navbar-logo"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-icon"><img src="images/icon-menu.svg" alt="logo"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">Features</li>
-                    <li class="nav-item">Company</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu mt-3 rounded-3 p-3" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Todo List</a></li>
+                            <li><a class="dropdown-item" href="#">Calendar</a></li>
+                            <li><a class="dropdown-item" href="#">Reminders</a></li>
+                            <li><a class="dropdown-item" href="#">Planning</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">Company <img src="images/icon-arrow-down.svg" alt="arrow-down" id="arrowDown2">
+                    </li>
                     <li class="nav-item">Careers</li>
                     <li class="nav-item">About</li>
                 </ul>

@@ -11966,6 +11966,13 @@ textarea.form-control-lg {
   color: #3e52a3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Epilogue", sans-serif;
 }
@@ -11973,6 +11980,15 @@ body {
 .hidden {
   opacity: 0;
   z-index: -100;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .nav-item {
@@ -12084,10 +12100,79 @@ body {
   border: 2px solid black;
 }
 
+.main-img {
+  width: 100%;
+}
+
+.main-text {
+  margin-top: 20px;
+}
+
+.main-h1 {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: center;
+}
+
+.main-p {
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0 10px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.main-btn {
+  font-weight: 500;
+  background-color: #000;
+  padding: 12px 23px;
+  margin-bottom: 40px;
+  border-style: none;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+.main-imgs {
+  margin: 0 5px;
+}
+
+.main-imgs img {
+  margin: 7px;
+}
+
 @media (max-width: 992px) {
   .dropdown-menu {
     -webkit-box-shadow: none;
             box-shadow: none;
     padding: 0 7px;
+  }
+}
+@media (min-width: 992px) {
+  .main-img {
+    content: url(../images/image-hero-desktop.png);
+    width: 50%;
+    padding: 50px;
+  }
+
+  .main-text {
+    padding: 50px;
+    padding-right: 0;
+  }
+
+  .main-h1 {
+    font-size: 50px;
+  }
+
+  .main-p {
+    padding: 0;
+  }
+
+  .main-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
